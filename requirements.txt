@@ -30,4 +30,3 @@ six==1.16.0
 soupsieve==2.2.1
 sqlparse==0.4.1
 win_inet_pton==1.1.0
-zlib==1.2.11
