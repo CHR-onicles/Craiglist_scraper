@@ -1,0 +1,9 @@
+.card {
+  height: 25rem;
+  overflow: hidden;
+}
+
+.card-image {
+  height: 15.6px;
+  overflow: hidden;
+}
