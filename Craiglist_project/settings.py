@@ -32,7 +32,7 @@ DEBUG = False
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
-
+    'dana-craig-app.herokuapp.com'
 ]
 
 
