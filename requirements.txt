@@ -14,7 +14,6 @@ toml==0.10.2
 whitenoise==5.2.0
 wincertstore==0.2
 beautifulsoup4==4.9.3
-ca-certificates==2021.5.25
 cffi==1.14.5
 chardet==4.0.0
 cryptography==3.4.7
