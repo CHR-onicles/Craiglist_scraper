@@ -19,7 +19,6 @@ chardet==4.0.0
 cryptography==3.4.7
 django==3.2.4
 idna==2.10
-krb5==1.17.1
 libpq==12.2
 openssl==1.1.1k
 psycopg2==2.8.6
