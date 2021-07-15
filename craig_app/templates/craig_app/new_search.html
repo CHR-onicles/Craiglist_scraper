@@ -1,5 +1,5 @@
-{% extends 'base.html' %} {% block content %}
-<h2 style="text-align: center">{{ search|title }}</h2>
+{% extends 'base.html' %}{% block content %}
+<h2 style="text-align: center; font-size: 25pt;">Search results for: "{{ search|title }}"</h2>
 
 <div class="row">
     {% for post  in final_postings  %}
