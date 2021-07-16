@@ -112,12 +112,16 @@
 
       {% block content %}{% endblock content %}
   </div>
-  <footer>
+  {% block footer %} 
+  <!-- Added this block because footer wont stay at the damn bottom. -->
+      <footer>
             <div>
              © 2021 Developed by
             <a href="https://github.com/CHR-onicles">Divine Anum</a>
             </div>
         </footer>
+  {% endblock footer %}
+
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
