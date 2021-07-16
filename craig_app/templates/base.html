@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CraigApp</title>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'craig_app/style.css' %}" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -16,6 +14,35 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+
+      <!-- Custom CSS -->
+      {% load static %}
+    <link rel="stylesheet" href="{% static 'craig_app/style.css' %}" />
+
+    <style>
+      body{
+        position: relative;
+        min-height: 100vh;
+      }
+      footer{
+        height: 50px;
+        background:#ee6e73;
+        color: white;
+        display: grid;
+        place-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+      }
+      footer a{
+        color: white;
+        font-weight: 600;
+        transition: all 0.4s ease;
+        letter-spacing: 1px;
+      }
+
+
+    </style>
   </head>
   <body>
     <nav>
@@ -29,10 +56,10 @@
 
     <div class="container">
       <h1 style="text-align: center">
-        What do you want to search for on the new Craig app?
+        Got something to search for on the new Craig app?
       </h1>
       <div class="row">
-        <div class="col s4">
+        <div class="col s12 m4">
           <!-- Promo Content 1 goes here -->
           <div class="center">
             <i class="large material-icons" style="color: #ee6e73">flash_on</i>
@@ -43,7 +70,7 @@
           </div>
         </div>
 
-        <div class="col s4">
+        <div class="col s12 m4">
           <!-- Promo Content 2 goes here -->
           <div class="center">
             <i class="large material-icons" style="color: orange">camera</i>
@@ -54,7 +81,7 @@
           </div>
         </div>
 
-        <div class="col s4">
+        <div class="col s12 m4">
           <!-- Promo Content 3 goes here -->
           <div class="center">
             <i class="large material-icons" style="color: blue"
@@ -74,18 +101,23 @@
           placeholder="Type in something to search"
         />
         <button
-          class="btn waves-effect waves-light"
+          class="btn waves-effect waves-light "
           type="submit"
           name="action"
-        >
+         style="margin-bottom: 7.5rem;">
           Submit
           <i class="material-icons right">send</i>
         </button>
       </form>
 
       {% block content %}{% endblock content %}
-    </div>
-
+  </div>
+  <footer>
+            <div>
+             © 2021 Developed by
+            <a href="https://github.com/CHR-onicles">Divine Anum</a>
+            </div>
+        </footer>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
